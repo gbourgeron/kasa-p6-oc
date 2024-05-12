@@ -2,6 +2,7 @@
 $primary-color: #FF6060;
 $light-color: white;
 $dark-color: black;
+$grey-color: #F6F6F6;
 
 // Fonts variables
 $main-font: "Montserrat", sans-serif;
@@ -32,5 +33,21 @@ body {
 }
 
 main {
+    @include flex-dir(column);
     margin: 0 100px;
+    gap: 50px;
+}
+
+.gallery {
+    padding: 30px;
+    border-radius: 25px;
+    background-color: $grey-color;
+
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        @include position-el(center, center);
+        padding-left: 0;
+        gap: 30px;
+    }
 }
