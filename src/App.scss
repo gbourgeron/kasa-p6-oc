@@ -20,19 +20,30 @@ $bolder-font-weight: 700;
 }
 
 body {
-    margin: 0;
+    margin: 0 auto;
     padding: 45px 0 0 0;
+    max-width: 1440px;
     font-family: $main-font;
 }
 
+.layout {
+    @include flex-dir(column);
+    gap: 50px;
+}
 
 header {
     @include flex-dir(row);
     @include position-el(space-between, center);
+    margin: 0 100px;
     
     .navbar__link {
         padding-left: 57px;
+        text-decoration: none;
     }
+}
+
+main {
+    margin: 0 100px;
 }
 
 footer {
