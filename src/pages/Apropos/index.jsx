@@ -2,7 +2,9 @@ import Banner from "../../components/Banner";
 
 function Apropos() {
     return (
-        <Banner page="about" />
+        <main>
+            <Banner page="about" />
+        </main>
     );
 }
 
