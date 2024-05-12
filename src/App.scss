@@ -1,0 +1,35 @@
+// Colors variables
+$primary-color: #FF6060;
+$light-color: white;
+$dark-color: black;
+
+// Fonts variables
+$main-font: "Montserrat", sans-serif;
+$normal-font-weight: 500;
+$bolder-font-weight: 700;
+
+// Layouts elements
+@mixin center-element-col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+body {
+    margin: 0;
+}
+
+.layout {
+    
+}
+
+footer {
+    @include center-element-col;
+    font-family: $main-font;
+    font-weight: $normal-font-weight;
+    font-size: 24px;
+    width: 100%;
+    color: $light-color;
+    background-color: $dark-color;
+}
