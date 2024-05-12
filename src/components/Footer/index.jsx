@@ -1,4 +1,5 @@
 import logo from '../../assets/LOGO_blanc.svg';
+import './index.scss';
 
 function Footer() {
     const thisYear = new Date().getFullYear();

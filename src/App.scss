@@ -31,63 +31,6 @@ body {
     gap: 50px;
 }
 
-header {
-    @include flex-dir(row);
-    @include position-el(space-between, center);
-    margin: 0 100px;
-    
-    .navbar__link {
-        padding-left: 57px;
-        text-decoration: none;
-    }
-}
-
 main {
     margin: 0 100px;
-}
-
-
-.banner {
-    display: flex;
-    @include position-el(center, center);
-    height: 223px;
-    border-radius: 25px;
-    color: $light-color;
-    font-weight: $bolder-font-weight;
-    overflow: hidden;
-
-    h2 {        
-        position: absolute;
-        z-index: 1;
-        font-size: 48px;
-    }
-    .background {
-        width: 100%;
-        height: 100%;
-        background-position: center;
-    
-        &--home {
-            background-image: url(./assets/image-source-1.jpg);
-            filter: brightness(30%);
-        }
-        &--about {
-            background-image: url(./assets/image-source-2.jpg);
-            filter: brightness(70%);
-        }
-    }
-}
-
-
-footer {
-    @include flex-dir(column);
-    @include position-el(center, center);
-    font-weight: $normal-font-weight;
-    font-size: 24px;
-    width: 100%;
-    color: $light-color;
-    background-color: $dark-color;
-
-    img {
-        margin-top: 66px;
-    }
 }

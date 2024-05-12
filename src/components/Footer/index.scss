@@ -1,0 +1,15 @@
+@import '../../App.scss';
+
+footer {
+    @include flex-dir(column);
+    @include position-el(center, center);
+    font-weight: $normal-font-weight;
+    font-size: 24px;
+    width: 100%;
+    color: $light-color;
+    background-color: $dark-color;
+
+    img {
+        margin-top: 66px;
+    }
+}

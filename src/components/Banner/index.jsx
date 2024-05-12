@@ -1,3 +1,5 @@
+import './index.scss';
+
 function Banner({ title, isHome }) {
     const backgroundClass = isHome ? 'background--home' : 'background--about';
 

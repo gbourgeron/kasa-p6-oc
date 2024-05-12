@@ -1,0 +1,12 @@
+@import '../../App.scss';
+
+header {
+    @include flex-dir(row);
+    @include position-el(space-between, center);
+    margin: 0 100px;
+    
+    .navbar__link {
+        padding-left: 57px;
+        text-decoration: none;
+    }
+}
