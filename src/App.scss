@@ -9,24 +9,35 @@ $normal-font-weight: 500;
 $bolder-font-weight: 700;
 
 // Layouts elements
-@mixin center-element-col {
+@mixin flex-dir($direction) {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    flex-direction: $direction;
+}
+
+@mixin position-el($axe1, $axe2) {
+    justify-content: $axe1;
+    align-items: $axe2;
 }
 
 body {
     margin: 0;
+    padding: 45px 0 0 0;
+    font-family: $main-font;
 }
 
-.layout {
+
+header {
+    @include flex-dir(row);
+    @include position-el(space-between, center);
     
+    .navbar__link {
+        padding-left: 57px;
+    }
 }
 
 footer {
-    @include center-element-col;
-    font-family: $main-font;
+    @include flex-dir(column);
+    @include position-el(center, center);
     font-weight: $normal-font-weight;
     font-size: 24px;
     width: 100%;
