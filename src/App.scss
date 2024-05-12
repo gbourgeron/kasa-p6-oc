@@ -44,6 +44,12 @@ header {
 
 main {
     margin: 0 100px;
+
+    .banner {
+        display: flex;
+        @include position-el(center, center);
+        border-radius: 25px;
+    }
 }
 
 footer {
