@@ -1,0 +1,23 @@
+@import '../../App.scss';
+
+.error {
+    @include flex-dir(column);
+    @include position-el(center, center);
+    gap: 50px;
+    margin-bottom: 50px;
+
+    .error-404 {
+        color: $primary-color;
+        font-size: 288px;
+        margin: 0;
+    }
+    
+    .error-text {
+        color: $primary-color;
+        font-size: 36px;
+    }
+    
+    .home-link {
+        font-size: 18px;
+    }
+}
