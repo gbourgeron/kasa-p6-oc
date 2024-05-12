@@ -1,6 +1,8 @@
+import Banner from "../../components/Banner";
+
 function Home() {
   return (
-    <div>Bonjour !</div>
+    <Banner title="Chez vous, partout et ailleurs" />
   );
 }
 

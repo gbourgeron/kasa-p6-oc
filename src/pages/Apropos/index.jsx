@@ -1,6 +1,8 @@
+import Banner from "../../components/Banner";
+
 function Apropos() {
     return (
-        <div>Bonsoir !</div>
+        <Banner />
     );
 }
 
