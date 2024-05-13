@@ -1,0 +1,62 @@
+@import '../../App.scss';
+
+.rule-collapse {
+    margin: 30px auto;
+    width: 1023px;
+    background-color: $grey-color;
+    
+    .header-collapse {
+        @include flex-dir(row);
+        @include position-el(space-between, center);
+        padding: 10px 20px 10px 15px;
+        border-radius: 5px;
+        background-color: $primary-color;
+    }
+    
+    .title-collapse {
+        margin: 0;
+        font-weight: $bolder-font-weight;
+        font-size: 24px;
+        color: $light-color;
+    }
+    
+    .arrow-collapse {
+        width: 32px;
+        height: 32px;
+        transition: transform 0.3s ease-in-out;
+        cursor: pointer;
+    }
+    
+    .text-block {
+        overflow: hidden;
+        transition: max-height 0.5s ease-in 0.2s;
+        max-height: 0px;
+    }
+
+    .text-collapse {
+        margin: 0;
+        padding: 20px;
+        line-height: 1.4;
+        transform: translateY(-100%);
+        transition: transform 1s ease-in-out;
+    }
+    
+    &.collapsed .text-block {
+        max-height: 0;
+        overflow: hidden;
+        transition: none;
+    }
+    
+    &.expanded .text-block {
+        max-height: 500px;
+    }
+
+    &.expanded .text-collapse {
+        transition: transform 0.9s ease;
+        transform: translateY(0);
+    }
+
+    .rotate {
+        transform: rotate(-180deg);
+    }
+}
