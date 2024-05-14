@@ -8,7 +8,7 @@ function Apropos() {
             <Banner page="about" />
             <section className="rules-list">
                 {rulesListe.map(({ id, title, description }) => (
-                    <Collapse key={id} title={title} description={description} />
+                    <Collapse key={id} title={title} content={description} />
                 ))}
             </section>
         </main>
