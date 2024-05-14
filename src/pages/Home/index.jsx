@@ -9,7 +9,7 @@ function Home() {
       <section className="gallery">
         <ul>
         {logementsListe.map(({ id, title, cover }) => (
-          <Card key={id} title={title} cover={cover} />
+          <Card key={id} id={id} title={title} cover={cover} />
         ))}
         </ul>
 
