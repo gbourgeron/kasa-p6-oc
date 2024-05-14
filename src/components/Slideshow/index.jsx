@@ -1,5 +1,7 @@
 import './index.scss';
 import React, { useState } from 'react';
+import arrowLeft from '../../assets/arrow-left.svg';
+import arrowRight from '../../assets/arrow-right.svg';
 
 function Slideshow({ images }) {
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -20,12 +22,8 @@ function Slideshow({ images }) {
         <div className="slideshow">
             {Array.isArray(images) && images.length > 1 && (
                 <>
-                    <button onClick={goToPreviousSlide} className="prev-button">
-                        &lt;
-                    </button>
-                    <button onClick={goToNextSlide} className="next-button">
-                        &gt;
-                    </button>
+                    <img src={arrowLeft} alt="Précédent" onClick={goToPreviousSlide} className="prev-button" />
+                    <img src={arrowRight} alt="Suivant" onClick={goToNextSlide} className="next-button" />
                 </>
             )}
             <div className="slide">

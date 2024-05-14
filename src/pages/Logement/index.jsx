@@ -15,7 +15,7 @@ function LogementPage () {
     }
 
     return (
-        <div>
+        <div className="logement-container">
             <Slideshow images={logement.pictures} />
             <div>
                 <div>

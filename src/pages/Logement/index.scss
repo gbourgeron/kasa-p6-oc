@@ -1,5 +1,10 @@
 @import '../../App.scss';
 
+.logement-container {
+    @include flex-dir(column);
+    @include position-el(center, center);
+}
+
 .header-logement {
     h2 {
         color: $primary-color;

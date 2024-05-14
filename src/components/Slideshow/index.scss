@@ -1,1 +1,40 @@
 @import '../../App.scss';
+
+.slideshow {
+    @include flex-dir(column);
+    @include position-el(center, center);
+    position: relative;
+    width: 1240px;
+    height: 415px;
+
+    img {
+        width: 1240px;
+        height: 415px;
+        object-fit: cover;
+        border-radius: 25px;
+    }
+
+    .prev-button:hover, .next-button:hover {
+        cursor: pointer;
+    }
+
+    .prev-button, .next-button {
+        position: absolute;
+        height: 80px;
+        width: 47px;
+    }
+
+    .prev-button {
+        left: 30px;
+    }
+
+    .next-button {
+        right: 30px;
+    }
+
+    .slide-counter {
+        position: absolute;
+        bottom: 30px;
+        color: $light-color;
+    }
+}
