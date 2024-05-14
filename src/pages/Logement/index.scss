@@ -1,0 +1,39 @@
+@import '../../App.scss';
+
+.header-logement {
+    h2 {
+        color: $primary-color;
+        font-size: 36px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+}
+
+.header-avatar {
+    h4 {
+        color: $primary-color;
+        font-size: 18px;
+    }
+    img {
+        width: 64px;
+        height: 64px;
+        border-radius: 50%;
+    }
+}
+
+.tags {
+    span {
+        display: inline-block;
+        align-content: center;
+        width: 115px;
+        height: 25px;
+        padding: 3px;
+        border-radius: 10px;
+        font-size: 14px;
+        text-align: center;
+        color: $light-color;
+        background-color: $primary-color;
+    }
+}
