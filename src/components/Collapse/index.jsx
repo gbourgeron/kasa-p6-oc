@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './index.scss'
 import arrow from '../../assets/arrow.png'
 
-function Collapse({ id, title, description}) {
+function Collapse({ title, content }) {
     const [isCollapsed, setIsCollapsed] = useState(true);
 
     const toggleCollapse = () => {
@@ -19,7 +19,7 @@ function Collapse({ id, title, description}) {
                     alt="Flèche pour dérouler le texte" onClick={toggleCollapse} />
             </div>
             <div className="text-block">
-                <p className="text-collapse">{description}</p>
+                <p className="text-collapse">{content}</p>
             </div>
         </div>
     )
