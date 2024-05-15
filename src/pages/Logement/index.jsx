@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import Slideshow from "../../components/Slideshow";
 import Collapse from "../../components/Collapse";
 import logements from '../../logements.json';
+import StarRating from "../../components/StarRating";
 import './index.scss';
 
 function LogementPage () {
@@ -35,14 +36,14 @@ function LogementPage () {
                         ))}
                     </div>
                     <div>
-                        {/* <StarRating rating={logement.rating} /> */}
+                        <StarRating rating={logement.rating} />
                     </div>
                 </div>
                 <div>
                     <div>
-                        <Collapse title="Description" content={logement.description}>
+                        <Collapse className="logement-collapse" title="Description" content={logement.description}>
                         </Collapse>
-                        <Collapse title="Équipements" content={logement.equipments}>
+                        <Collapse className="logement-collapse" title="Équipements" content={logement.equipments}>
                             <ul>
                                 {logement.equipments.map((equipment, index) => (
                                     <li key={index}>{equipment}</li>
