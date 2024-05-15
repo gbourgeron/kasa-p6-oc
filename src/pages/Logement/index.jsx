@@ -1,5 +1,5 @@
 import React from "react";
-import { useParams } from "react-router-dom";
+import { Navigate, useParams } from "react-router-dom";
 import Slideshow from "../../components/Slideshow";
 import Collapse from "../../components/Collapse";
 import logements from '../../logements.json';
@@ -12,7 +12,8 @@ function LogementPage () {
     const logement = logements.find(logement => logement.id === id );
 
     if (!logement) {
-        return <div>Logement introuvable</div>;
+        return <Navigate to="/error" />;
+
     }
 
     const hostNameParts = logement.host.name.split(' ');
