@@ -2,7 +2,7 @@
 
 .rule-collapse {
     margin: 30px auto;
-    width: 1023px;
+    
     background-color: $grey-color;
     
     .header-collapse {
@@ -33,7 +33,7 @@
         max-height: 0px;
     }
 
-    .text-collapse {
+    .content-collapse {
         margin: 0;
         padding: 20px;
         line-height: 1.4;
@@ -51,7 +51,7 @@
         max-height: 500px;
     }
 
-    &.expanded .text-collapse {
+    &.expanded .content-collapse {
         transition: transform 0.9s ease;
         transform: translateY(0);
     }

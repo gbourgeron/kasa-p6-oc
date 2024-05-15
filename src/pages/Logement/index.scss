@@ -42,3 +42,18 @@
         background-color: $primary-color;
     }
 }
+
+.collapse-group {
+    @include flex-dir(row);
+    @include position-el(space-between, flex-start);
+}
+
+.rules-collapse {
+    width: 523px;
+
+    ul {
+        display: flex;
+        flex-direction: column;
+    }
+}
+

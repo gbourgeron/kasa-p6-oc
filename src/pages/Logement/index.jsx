@@ -39,18 +39,9 @@ function LogementPage () {
                         <StarRating rating={logement.rating} />
                     </div>
                 </div>
-                <div>
-                    <div>
-                        <Collapse className="logement-collapse" title="Description" content={logement.description}>
-                        </Collapse>
-                        <Collapse className="logement-collapse" title="Équipements" content={logement.equipments}>
-                            <ul>
-                                {logement.equipments.map((equipment, index) => (
-                                    <li key={index}>{equipment}</li>
-                                ))}
-                            </ul>
-                        </Collapse>
-                    </div>
+                <div className="collapse-group">
+                    <Collapse title="Description" content={logement.description} contentType="paragraph" />
+                    <Collapse title="Équipements" content={logement.equipments} contentType="list" />
                 </div>
             </div>
         </div>
