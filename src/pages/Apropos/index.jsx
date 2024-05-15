@@ -1,7 +1,6 @@
 import Banner from "../../components/Banner";
 import Collapse from "../../components/Collapse";
 import rulesListe from '../../apropos.json';
-import './index.scss'
 
 function Apropos() {
     return (

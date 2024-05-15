@@ -14,14 +14,14 @@ function Collapse({ title, content, contentType }) {
             return <p className="content-collapse">{content}</p>;
         } else if (contentType === 'list') {
             return (
-                <ul>
+                <ul className='equipment-list'>
                     {content.map((item, index) => (
                         <li key={index}>{item}</li>
                     ))}
                 </ul>
             );
         } else {
-            return null; // Gérer le cas où le type de contenu n'est pas reconnu
+            return null; 
         }
     }
 

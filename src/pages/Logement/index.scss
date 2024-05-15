@@ -46,14 +46,18 @@
 .collapse-group {
     @include flex-dir(row);
     @include position-el(space-between, flex-start);
-}
+    gap: 50px;
 
-.rules-collapse {
-    width: 523px;
-
-    ul {
-        display: flex;
-        flex-direction: column;
+    .rule-collapse {
+        width: 582px;
+    }
+    
+    .equipment-list {
+            list-style-type: none;
+            padding-left: 20px;
+            line-height: 23px;
     }
 }
+
+
 
