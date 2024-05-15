@@ -5,41 +5,66 @@
     @include position-el(center, center);
 }
 
-.header-logement {
-    h2 {
-        color: $primary-color;
-        font-size: 36px;
+.infos-part1 {
+    @include flex-dir(row);
+    @include position-el(space-between, center);
+    
+    .header-logement {
+        h2 {
+            margin-bottom: 0;
+            color: $primary-color;
+            font-size: 36px;
+        }
+        
+        h3 {
+            margin-top: 5px;
+            font-size: 18px;
+        }
     }
+    
+    .header-avatar {
+        @include flex-dir(row);
+        @include position-el(space-between, center);
+        gap: 15px;
 
-    h3 {
-        font-size: 18px;
+        .name {
+            @include flex-dir(column);
+            @include position-el(center, flex-end);
+        }
+        
+        h4 {
+            margin: 2px;
+            color: $primary-color;
+            font-size: 18px;
+        }
+        img {
+            width: 64px;
+            height: 64px;
+            border-radius: 50%;
+        }
     }
 }
 
-.header-avatar {
-    h4 {
-        color: $primary-color;
-        font-size: 18px;
-    }
-    img {
-        width: 64px;
-        height: 64px;
-        border-radius: 50%;
-    }
-}
+.infos-part2 {
+    @include flex-dir(row);
+    @include position-el(space-between, center);
 
-.tags {
-    span {
-        display: inline-block;
-        align-content: center;
-        width: 115px;
-        height: 25px;
-        padding: 3px;
-        border-radius: 10px;
-        font-size: 14px;
-        text-align: center;
-        color: $light-color;
-        background-color: $primary-color;
+    .tags {
+        display: flex;
+        gap: 10px;
+        span {
+            display: inline-block;
+            align-items: center;
+            align-content: center;
+            width: 115px;
+            height: 25px;
+            padding: 3px;
+            border-radius: 10px;
+            font-size: 14px;
+            text-align: center;
+            color: $light-color;
+            background-color: $primary-color;
+        }
     }
 }
 

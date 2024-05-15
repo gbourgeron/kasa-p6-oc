@@ -15,21 +15,29 @@ function LogementPage () {
         return <div>Logement introuvable</div>;
     }
 
+    const hostNameParts = logement.host.name.split(' ');
+    const firstName = hostNameParts[0];
+    const lastName = hostNameParts.slice(1).join(' ');
+
     return (
         <div className="logement-container">
             <Slideshow images={logement.pictures} />
-            <div>
-                <div>
+            <div className="infos-logement">
+                <div className="infos-part1">
                     <div className="header-logement">
                         <h2>{logement.title}</h2>
                         <h3>{logement.location}</h3>
                     </div>
                     <div className="header-avatar">
-                        <h4>{logement.host.name}</h4>
+                        <div className="name">
+                            <h4>{firstName}</h4>
+                            <h4>{lastName}</h4>
+                        </div>
+                        {/* <h4>{logement.host.name}</h4> */}
                         <img src={logement.host.picture} alt="Host" />
                     </div>
                 </div>
-                <div>
+                <div className="infos-part2">
                     <div className="tags">
                         {logement.tags.map((tag, index) => (
                             <span key={index}>{tag}</span>
