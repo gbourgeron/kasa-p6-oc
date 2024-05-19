@@ -11,6 +11,11 @@
         padding: 10px 20px 10px 15px;
         border-radius: 5px;
         background-color: $primary-color;
+
+        @media screen and (max-width: 375px) {
+            height: 30px;
+            padding: 0px 10px;
+        }
     }
     
     .title-collapse {
@@ -18,6 +23,10 @@
         font-weight: $bolder-font-weight;
         font-size: 24px;
         color: $light-color;
+
+        @media screen and (max-width: 375px) {
+            font-size: 13px;
+        }
     }
     
     .arrow-collapse {
@@ -25,6 +34,11 @@
         height: 32px;
         transition: transform 0.3s ease-in-out;
         cursor: pointer;
+
+        @media screen and (max-width: 375px) {
+            width: 16px;
+            height: 16px;
+        }
     }
     
     .rotate {
@@ -48,10 +62,17 @@
         max-height: 0;
         transform-origin: top;
         transform: translateY(-100%);
+
+        @media screen and (max-width: 375px) {
+            font-size: 14px;
+        }
     }
     
     .content-collapse {
         padding: 10px 20px;
+        @media screen and (max-width: 375px) {
+            padding: 5px 10px;
+        }
     }
     
     &.expanded .text-block {

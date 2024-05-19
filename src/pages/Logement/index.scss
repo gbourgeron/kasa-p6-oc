@@ -3,15 +3,28 @@
 .logement-container {
     @include flex-dir(column);
     @include position-el(center, center);
+    margin: 0 auto;
+    @media screen and (max-width: 375px) {
+        width: 335px;
+    }
 }
 
 .infos-logement {
     width: 1240px;
+    @media screen and (max-width: 375px) {
+        width: 335px;
+    }
 }
 
 .infos {
     @include flex-dir(row);
     @include position-el(space-between, center);
+
+    @media screen and (max-width: 375px) {
+        @include flex-dir(column);
+        @include position-el(center, flex-start)
+
+    }
     
     .header-logement {
         h2 {
@@ -19,11 +32,19 @@
             margin-bottom: 0;
             color: $primary-color;
             font-size: 36px;
+            @media screen and (max-width: 375px) {
+                font-size: 18px;
+                margin-top: 15px;
+            }
         }
         
         h3 {
             margin-top: 0px;
             font-size: 18px;
+            @media screen and (max-width: 375px) {
+                font-size: 14px;
+                margin-top: 8px;
+            }
         }
         .tags {
             display: flex;
@@ -40,6 +61,13 @@
                 text-align: center;
                 color: $light-color;
                 background-color: $primary-color;
+
+                @media screen and (max-width: 375px) {
+                    width: 84px;
+                    height: 18px;
+                    font-size: 10px;
+                    line-height: 8px;
+                }
             }
         }
     }
@@ -49,6 +77,12 @@
         @include position-el(space-between, flex-end);
         gap: 25px;
         padding: 20px 0;
+        @media screen and (max-width: 375px) {
+            @include position-el(space-between, space-between);
+            width: 100%;
+            flex-direction: row-reverse;
+            padding: 15px 0;
+        }
 
         .name-picture {
             @include flex-dir(row);
@@ -64,11 +98,19 @@
                 margin: 2px;
                 color: $primary-color;
                 font-size: 18px;
+
+                @media screen and (max-width: 375px) {
+                    font-size: 12px;
+                }
             }
             img {
                 width: 64px;
                 height: 64px;
                 border-radius: 50%;
+                @media screen and (max-width: 375px) {
+                    width: 32px;
+                    height: 32px;
+                }
             }
         }
 
@@ -79,15 +121,25 @@
     @include flex-dir(row);
     @include position-el(space-between, flex-start);
     gap: 50px;
+    @media screen and (max-width: 375px) {
+        @include flex-dir(column);
+        gap: 20px;
+    }
 
     .rule-collapse {
         width: 50%;
+        @media screen and (max-width: 375px) {
+            width: 100%;
+        }
     }
     
     .equipment-list {
             list-style-type: none;
             padding-left: 20px;
             line-height: 23px;
+            @media screen and (max-width: 375px) {
+                padding-left: 10px;
+            }
     }
 }
 
