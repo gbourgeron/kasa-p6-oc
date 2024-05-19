@@ -5,66 +5,73 @@
     @include position-el(center, center);
 }
 
-.infos-part1 {
+.infos-logement {
+    width: 1240px;
+}
+
+.infos {
     @include flex-dir(row);
     @include position-el(space-between, center);
     
     .header-logement {
         h2 {
+            margin-top: 0;
             margin-bottom: 0;
             color: $primary-color;
             font-size: 36px;
         }
         
         h3 {
-            margin-top: 5px;
+            margin-top: 0px;
             font-size: 18px;
+        }
+        .tags {
+            display: flex;
+            gap: 10px;
+            span {
+                display: inline-block;
+                align-items: center;
+                align-content: center;
+                width: 115px;
+                height: 25px;
+                padding: 3px;
+                border-radius: 10px;
+                font-size: 14px;
+                text-align: center;
+                color: $light-color;
+                background-color: $primary-color;
+            }
         }
     }
     
     .header-avatar {
-        @include flex-dir(row);
-        @include position-el(space-between, center);
-        gap: 15px;
+        @include flex-dir(column);
+        @include position-el(space-between, flex-end);
+        gap: 25px;
+        padding: 20px 0;
 
-        .name {
-            @include flex-dir(column);
-            @include position-el(center, flex-end);
+        .name-picture {
+            @include flex-dir(row);
+            @include position-el(space-between, center);
+            gap: 15px;
+            
+            .name {
+                @include flex-dir(column);
+                @include position-el(center, flex-end);
+            }
+            
+            h4 {
+                margin: 2px;
+                color: $primary-color;
+                font-size: 18px;
+            }
+            img {
+                width: 64px;
+                height: 64px;
+                border-radius: 50%;
+            }
         }
-        
-        h4 {
-            margin: 2px;
-            color: $primary-color;
-            font-size: 18px;
-        }
-        img {
-            width: 64px;
-            height: 64px;
-            border-radius: 50%;
-        }
-    }
-}
 
-.infos-part2 {
-    @include flex-dir(row);
-    @include position-el(space-between, center);
-
-    .tags {
-        display: flex;
-        gap: 10px;
-        span {
-            display: inline-block;
-            align-items: center;
-            align-content: center;
-            width: 115px;
-            height: 25px;
-            padding: 3px;
-            border-radius: 10px;
-            font-size: 14px;
-            text-align: center;
-            color: $light-color;
-            background-color: $primary-color;
-        }
     }
 }
 
@@ -74,7 +81,7 @@
     gap: 50px;
 
     .rule-collapse {
-        width: 582px;
+        width: 50%;
     }
     
     .equipment-list {

@@ -24,27 +24,24 @@ function LogementPage () {
         <div className="logement-container">
             <Slideshow images={logement.pictures} />
             <div className="infos-logement">
-                <div className="infos-part1">
+                <div className="infos">
                     <div className="header-logement">
                         <h2>{logement.title}</h2>
                         <h3>{logement.location}</h3>
+                        <div className="tags">
+                            {logement.tags.map((tag, index) => (
+                                <span key={index}>{tag}</span>
+                            ))}
+                        </div>
                     </div>
                     <div className="header-avatar">
-                        <div className="name">
-                            <h4>{firstName}</h4>
-                            <h4>{lastName}</h4>
+                        <div className="name-picture">
+                            <div className="name">
+                                <h4>{firstName}</h4>
+                                <h4>{lastName}</h4>
+                            </div>
+                            <img src={logement.host.picture} alt="Host" />
                         </div>
-                        {/* <h4>{logement.host.name}</h4> */}
-                        <img src={logement.host.picture} alt="Host" />
-                    </div>
-                </div>
-                <div className="infos-part2">
-                    <div className="tags">
-                        {logement.tags.map((tag, index) => (
-                            <span key={index}>{tag}</span>
-                        ))}
-                    </div>
-                    <div>
                         <StarRating rating={logement.rating} />
                     </div>
                 </div>

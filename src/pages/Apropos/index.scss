@@ -1,0 +1,6 @@
+@import '../../App.scss';
+
+.rules-list {
+    @include flex-dir(column);
+    gap: 30px;
+}
