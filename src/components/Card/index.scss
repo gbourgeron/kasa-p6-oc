@@ -21,6 +21,11 @@
         height: 340px;
         border-radius: 10px;
         overflow: hidden;
+
+        @media screen and (max-width: 375px) {
+            width: 100%;
+            height: 255px;
+        }
     }
     
     .img-container::before {
