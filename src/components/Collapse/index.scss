@@ -3,7 +3,7 @@
 .rule-collapse {
     margin: 30px auto;
     max-width: 1023px;
-    background-color: $grey-color;
+    overflow: hidden;
     
     .header-collapse {
         @include flex-dir(row);
@@ -27,36 +27,36 @@
         cursor: pointer;
     }
     
-    .text-block {
-        overflow: hidden;
-        transition: max-height 0.5s ease-in 0.2s;
-        max-height: 0px;
+    .rotate {
+        transform: rotate(-180deg);
     }
 
-    .content-collapse {
-        margin: 0;
-        padding: 20px;
+    .text-block {
+        position: relative;
+        z-index: -1;
+        margin: 0;        
         line-height: 1.4;
+        overflow: hidden;
+        background-color: $grey-color;
+        
+        transition: 
+            max-height 0.3s ease,
+            transform 0.3s ease,
+            opacity 0.3s ease;
+        
+        opacity: 0;
+        max-height: 0;
+        transform-origin: top;
         transform: translateY(-100%);
-        transition: transform 1s ease-in-out;
     }
     
-    &.collapsed .text-block {
-        max-height: 0;
-        overflow: hidden;
-        transition: none;
+    .content-collapse {
+        padding: 10px 20px;
     }
     
     &.expanded .text-block {
-        max-height: 500px;
-    }
-
-    &.expanded .content-collapse {
-        transition: transform 0.9s ease;
+        opacity: 1;
+        max-height: 1000px;
         transform: translateY(0);
-    }
-
-    .rotate {
-        transform: rotate(-180deg);
     }
 }
