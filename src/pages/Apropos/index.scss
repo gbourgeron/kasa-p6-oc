@@ -3,4 +3,7 @@
 .rules-list {
     @include flex-dir(column);
     gap: 30px;
+    @media screen and (max-width: 375px) {
+        gap: 19px;
+    }
 }

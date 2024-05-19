@@ -2,13 +2,17 @@ import './index.scss';
 
 function Banner({ title, isHome }) {
     const backgroundClass = isHome ? 'background--home' : 'background--about';
-    const titleParts = title.split(', ');
+    let titleParts = [];
+    if (title) {
+        titleParts = title.split(', ');
+    }
+    // const titleParts = title.split(', ');
 
     return (
         <section className="banner">
             {titleParts && (
                 <h2>
-                    <span className='first-part'>{titleParts[0]}, </span>
+                    {titleParts[0] && <span className='first-part'>{titleParts[0]}, </span>}
                     <br className='mobile-br' />
                     <span className='second-part'>{titleParts[1]}</span>
                 </h2>

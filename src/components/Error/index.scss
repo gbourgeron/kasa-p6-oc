@@ -5,19 +5,33 @@
     @include position-el(center, center);
     gap: 50px;
     margin-bottom: 50px;
+    @media screen and (max-width: 375px) {
+        gap: 113px;
+    }
 
     .error-404 {
         color: $primary-color;
         font-size: 288px;
         margin: 0;
+        @media screen and (max-width: 375px) {
+            margin-top: 86px;
+            font-size: 96px;
+        }
     }
     
     .error-text {
         color: $primary-color;
         font-size: 36px;
+        text-align: center;
+        @media screen and (max-width: 375px) {
+            font-size: 18px;
+        }
     }
     
     .home-link {
         font-size: 18px;
+        @media screen and (max-width: 375px) {
+            font-size: 14px;
+        }
     }
 }
