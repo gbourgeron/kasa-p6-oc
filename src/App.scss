@@ -35,6 +35,10 @@ body {
     @include flex-dir(column);
     gap: 50px;
 
+    @media screen and (max-width: 768px) {
+        gap: 30px;
+    }
+
     @media screen and (max-width: 375px) {
         gap: 27px;
     }
@@ -44,33 +48,57 @@ main {
     @include flex-dir(column);
     margin: 0 100px;
     gap: 50px;
+
+    @media screen and (max-width: 768px) {
+        margin: 0 35px;
+        gap: 30px;
+    }
+
     @media screen and (max-width: 375px) {
         margin: 0 20px;
         gap: 22px;
     }
 }
 
+// .gallery {
+//     margin: auto;
+//     padding: 30px;
+//     border-radius: 25px;
+//     background-color: $grey-color;
+
+//     @media screen and (max-width: 375px) {
+//         padding: 0;
+//         background: none;
+//     }
+
+//     ul {
+//         display: flex;
+//         flex-wrap: wrap;
+//         @include position-el(center, center);
+//         padding-left: 0;
+//         gap: 30px;
+
+//         @media screen and (max-width: 375px) {
+//             margin: 0;
+//             gap: 22px;
+//         }
+//     }    
+// }
+
 .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    @include position-el(center, center);
+    gap: 30px;
     margin: auto;
     padding: 30px;
     border-radius: 25px;
     background-color: $grey-color;
-
+        
     @media screen and (max-width: 375px) {
+        margin: 0;
+        gap: 22px;
         padding: 0;
         background: none;
     }
-
-    ul {
-        display: flex;
-        flex-wrap: wrap;
-        @include position-el(center, center);
-        padding-left: 0;
-        gap: 30px;
-
-        @media screen and (max-width: 375px) {
-            margin: 0;
-            gap: 22px;
-        }
-    }    
 }

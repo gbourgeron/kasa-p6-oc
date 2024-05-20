@@ -7,6 +7,9 @@
     color: $light-color;
     font-weight: $bolder-font-weight;
 
+    @media screen and (max-width: 768px) {
+        height: 150px;
+    }
     @media screen and (max-width: 375px) {
         height: 111px;
     }
@@ -16,6 +19,9 @@
         z-index: 1;
         font-size: 48px;
 
+        @media screen and (max-width: 768px) {
+            font-size: 32px;
+        }
         @media screen and (max-width: 375px) {
             font-size: 24px;
             left: 35px;

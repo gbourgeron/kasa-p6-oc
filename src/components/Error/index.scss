@@ -4,15 +4,21 @@
     @include flex-dir(column);
     @include position-el(center, center);
     gap: 50px;
+    padding: 0 30px;
     margin-bottom: 50px;
     @media screen and (max-width: 375px) {
         gap: 113px;
+        padding: 0 10px;
     }
 
     .error-404 {
         color: $primary-color;
         font-size: 288px;
         margin: 0;
+        @media screen and (max-width: 768px) {
+            margin-top: 86px;
+            font-size: 160px;
+        }
         @media screen and (max-width: 375px) {
             margin-top: 86px;
             font-size: 96px;
@@ -23,6 +29,9 @@
         color: $primary-color;
         font-size: 36px;
         text-align: center;
+        @media screen and (max-width: 768px) {
+            font-size: 30px;
+        }
         @media screen and (max-width: 375px) {
             font-size: 18px;
         }
