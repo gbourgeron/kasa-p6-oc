@@ -6,14 +6,6 @@ function Home() {
   return (
     <main>
       <Banner title="Chez vous, partout et ailleurs" isHome={true} />
-      {/* <section className="gallery">
-        <ul>
-        {logementsListe.map(({ id, title, cover }) => (
-          <Card key={id} id={id} title={title} cover={cover} />
-        ))}
-        </ul>
-      </section> */}
-      {/* <section className="gallery"> */}
       <section>
         <ul className="gallery">
         {logementsListe.map(({ id, title, cover }) => (
@@ -21,7 +13,6 @@ function Home() {
         ))}
         </ul>
       </section>
-      {/* </section> */}
     </main>
   );
 }
