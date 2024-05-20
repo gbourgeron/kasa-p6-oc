@@ -3,9 +3,17 @@
   .star {
     padding-left: 15px;
     height: 24px;
+    @media screen and (max-width: 1024px) {
+      padding-left: 10px;
+      height: 20px;
+  }
+    @media screen and (max-width: 768px) {
+      padding-left: 10px;
+      height: 18px;
+  }
     @media screen and (max-width: 375px) {
       padding-left: 8px;
-      height: 18px;
+      height: 15px;
   }
   }
   

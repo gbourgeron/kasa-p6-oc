@@ -1,8 +1,24 @@
 @import '../../App.scss';
 
+.logement-link {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+    flex-basis: calc(30% - 10px);
+    @media screen and (max-width: 1024px) {
+        flex-basis: calc(45%);
+    }
+    @media screen and (max-width: 768px) {
+        flex-basis: calc(100%);
+    }
+}
+
 .logement {  
+    display: flex;
+    justify-content: center;
     position: relative;
     list-style-type: none;
+    width: 100%;
     
     h3 {
         position: absolute;
@@ -17,7 +33,7 @@
     
     .img-container {
         position: relative;
-        width: 335px;
+        width: 100%;
         height: 340px;
         border-radius: 10px;
         overflow: hidden;

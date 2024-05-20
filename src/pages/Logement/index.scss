@@ -55,6 +55,7 @@
         }
         .tags {
             display: flex;
+            flex-wrap: wrap;
             gap: 10px;
             span {
                 display: inline-block;
@@ -95,6 +96,9 @@
             @include flex-dir(row);
             @include position-el(space-between, center);
             gap: 15px;
+            @media screen and (max-width: 375px) {
+                gap: 7px
+            }
             
             .name {
                 @include flex-dir(column);
