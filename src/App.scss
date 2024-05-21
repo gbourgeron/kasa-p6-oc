@@ -38,7 +38,6 @@ body {
     @media screen and (max-width: 768px) {
         gap: 30px;
     }
-
     @media screen and (max-width: 375px) {
         gap: 27px;
     }
@@ -56,30 +55,5 @@ main {
     @media screen and (max-width: 768px) {
         margin: 0 20px;
         gap: 22px;
-    }
-}
-
-.gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 44px;
-    margin: auto;
-    padding: 44px;
-    border-radius: 25px;
-    background-color: $grey-color;
-        
-    @media screen and (max-width: 1024px) {
-        grid-template-columns: repeat(auto-fill, minmax(45%, 1fr));
-    }
-    @media screen and (max-width: 768px) {
-        grid-template-columns: 1fr;
-        gap: 33px;
-        padding: 33px;
-    }
-    @media screen and (max-width: 375px) {
-        margin: 0;
-        gap: 22px;
-        padding: 0;
-        background: none;
     }
 }

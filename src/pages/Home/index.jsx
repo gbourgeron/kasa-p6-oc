@@ -1,6 +1,7 @@
 import Banner from "../../components/Banner";
 import Card from "../../components/Card";
 import logementsListe from '../../logements.json';
+import './index.scss'
 
 function Home() {
   return (
