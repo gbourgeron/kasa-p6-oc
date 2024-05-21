@@ -6,7 +6,7 @@ header {
     margin: 0 100px;
 
     @media screen and (max-width: 768px) {
-        margin: 0 40px;
+        margin: 0 20px;
     }
     @media screen and (max-width: 375px) {
         margin: 0 20px;
@@ -15,7 +15,7 @@ header {
     .logo-link {
         img {
             @media screen and (max-width: 768px) {
-                width: 180px;
+                width: 150px;
             }
             @media screen and (max-width: 375px) {
                 width: 145px;
@@ -29,8 +29,8 @@ header {
         text-decoration: none;
 
         @media screen and (max-width: 768px) {
-            padding-left: 25px;
-            font-size: 18px;
+            padding-left: 20px;
+            font-size: 12px;
             text-transform: uppercase;
         }
         @media screen and (max-width: 375px) {

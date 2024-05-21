@@ -32,10 +32,15 @@
             margin-bottom: 0;
             color: $primary-color;
             font-size: 36px;
+            @media screen and (max-width: 1024px) {
+                font-size: 28px;
+                margin-top: 15px;
+                margin-right: 10px;
+            }   
             @media screen and (max-width: 768px) {
                 font-size: 24px;
                 margin-top: 15px;
-            }
+            }   
             @media screen and (max-width: 375px) {
                 font-size: 18px;
             }
@@ -57,6 +62,10 @@
             display: flex;
             flex-wrap: wrap;
             gap: 10px;
+            margin-bottom: 10px;
+            @media screen and (max-width:768px) {
+                margin-bottom: 0;
+            }
             span {
                 display: inline-block;
                 align-content: center;
