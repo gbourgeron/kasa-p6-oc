@@ -13,7 +13,6 @@ function LogementPage () {
 
     if (!logement) {
         return <Navigate to="/error" />;
-
     }
 
     const hostNameParts = logement.host.name.split(' ');
