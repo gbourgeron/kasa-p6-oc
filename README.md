@@ -1,3 +1,26 @@
+## Installation
+
+Before running the application, make sure you have Node.js and npm installed on your machine. Then, follow these steps to install the necessary dependencies:
+
+1. Clone the repository:
+    
+    ### `git clone` <repository_url>
+    
+2. Navigate to the project directory:
+    
+    ### `cd kasa`
+    
+3. Install the dependencies:
+    
+    ### `npm install`
+    
+4. Start the development server:
+    
+    ### `npm start`
+
+This will launch the app in development mode. Open [http://localhost:3000](http://localhost:3000) to view it in your browser. The page will reload if you make edits. You will also see any lint errors in the console.
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
