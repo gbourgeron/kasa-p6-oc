@@ -26,8 +26,8 @@ function LogementPage () {
             <div className="infos-logement">
                 <div className="infos">
                     <div className="header-logement">
-                        <h2>{logement.title}</h2>
-                        <h3>{logement.location}</h3>
+                        <h1>{logement.title}</h1>
+                        <p>{logement.location}</p>
                         <div className="tags">
                             {logement.tags.map((tag, index) => (
                                 <span key={index}>{tag}</span>
