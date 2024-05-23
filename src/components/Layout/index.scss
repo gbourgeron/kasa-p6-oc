@@ -1,0 +1,13 @@
+@import '../../App.scss';
+
+.layout {
+    @include flex-dir(column);
+    gap: 50px;
+
+    @media screen and (max-width: 768px) {
+        gap: 30px;
+    }
+    @media screen and (max-width: 375px) {
+        gap: 27px;
+    }
+}
